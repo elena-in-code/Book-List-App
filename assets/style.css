@@ -2,12 +2,11 @@
     color: white;
     padding: 5px;
     margin: 5px 0 15px 0;
+    border-radius: 4px;
 }
 .success {
     background: green;
-    border-radius: 5px;
 }
 .error {
     background: red;
-    border-radius: 5px;
 }
