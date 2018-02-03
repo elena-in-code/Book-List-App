@@ -5,7 +5,9 @@
 }
 .success {
     background: green;
+    border-radius: 5px;
 }
 .error {
     background: red;
+    border-radius: 5px;
 }
