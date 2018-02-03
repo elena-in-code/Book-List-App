@@ -1,12 +1,46 @@
+h1{
+    text-align: center;
+}
 .success, .error {
     color: white;
     padding: 5px;
     margin: 5px 0 15px 0;
     border-radius: 4px;
+    border: 3px solid white;
 }
 .success {
-    background: green;
+    background: #3CFF74;
 }
 .error {
-    background: red;
+    background: #FF344C;
 }
+@keyframes color-move {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: -200%;
+      left: -200%;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  body::before, body::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  body::after {
+    content: "";
+    width: 400%;
+    height: 400%;
+    opacity: 0.8;
+    background: linear-gradient(5deg, #C651CC, #F520FF, #73FF6D, #32FF28);
+    animation: color-move 18s ease infinite;
+  }
